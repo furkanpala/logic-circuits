@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </tool>
+    <tool name="Constant">
+      <a name="facing" val="north"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2">
+    <tool name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="width" val="4"/>
+    </tool>
+    <tool name="Demultiplexer">
+      <a name="select" val="3"/>
+      <a name="width" val="3"/>
+    </tool>
+    <tool name="Decoder">
+      <a name="facing" val="west"/>
+      <a name="select" val="4"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="3">
+    <tool name="Subtractor">
+      <a name="width" val="5"/>
+    </tool>
+  </lib>
+  <lib desc="#Memory" name="4">
+    <tool name="D Flip-Flop">
+      <a name="trigger" val="high"/>
+    </tool>
+    <tool name="Counter">
+      <a name="width" val="4"/>
+      <a name="max" val="0xf"/>
+    </tool>
+    <tool name="Shift Register">
+      <a name="length" val="4"/>
+    </tool>
+    <tool name="RAM">
+      <a name="addrWidth" val="4"/>
+      <a name="dataWidth" val="4"/>
+      <a name="bus" val="asynch"/>
+    </tool>
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="left"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="file#C:\Users\Asus-Pc\Desktop\logic_circuits\lib\7400-lib.circ" name="7"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="left"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(120,90)" to="(180,90)"/>
+    <wire from="(330,530)" to="(450,530)"/>
+    <wire from="(140,160)" to="(140,300)"/>
+    <wire from="(180,200)" to="(180,340)"/>
+    <wire from="(340,180)" to="(340,190)"/>
+    <wire from="(390,160)" to="(690,160)"/>
+    <wire from="(390,300)" to="(690,300)"/>
+    <wire from="(340,250)" to="(450,250)"/>
+    <wire from="(120,70)" to="(160,70)"/>
+    <wire from="(140,300)" to="(140,330)"/>
+    <wire from="(70,490)" to="(360,490)"/>
+    <wire from="(70,490)" to="(70,520)"/>
+    <wire from="(390,310)" to="(610,310)"/>
+    <wire from="(140,160)" to="(360,160)"/>
+    <wire from="(160,70)" to="(160,170)"/>
+    <wire from="(140,300)" to="(360,300)"/>
+    <wire from="(340,190)" to="(360,190)"/>
+    <wire from="(340,210)" to="(360,210)"/>
+    <wire from="(340,430)" to="(360,430)"/>
+    <wire from="(340,450)" to="(360,450)"/>
+    <wire from="(140,50)" to="(140,160)"/>
+    <wire from="(180,90)" to="(180,200)"/>
+    <wire from="(120,50)" to="(140,50)"/>
+    <wire from="(350,350)" to="(360,350)"/>
+    <wire from="(280,400)" to="(410,400)"/>
+    <wire from="(160,70)" to="(610,70)"/>
+    <wire from="(180,90)" to="(630,90)"/>
+    <wire from="(410,330)" to="(410,400)"/>
+    <wire from="(280,400)" to="(280,470)"/>
+    <wire from="(70,360)" to="(70,490)"/>
+    <wire from="(690,160)" to="(690,300)"/>
+    <wire from="(690,300)" to="(690,430)"/>
+    <wire from="(70,220)" to="(70,360)"/>
+    <wire from="(610,70)" to="(670,70)"/>
+    <wire from="(160,170)" to="(160,310)"/>
+    <wire from="(180,200)" to="(360,200)"/>
+    <wire from="(180,340)" to="(360,340)"/>
+    <wire from="(340,450)" to="(340,460)"/>
+    <wire from="(690,430)" to="(690,520)"/>
+    <wire from="(630,90)" to="(670,90)"/>
+    <wire from="(390,430)" to="(690,430)"/>
+    <wire from="(390,320)" to="(630,320)"/>
+    <wire from="(70,220)" to="(360,220)"/>
+    <wire from="(70,360)" to="(360,360)"/>
+    <wire from="(350,350)" to="(350,440)"/>
+    <wire from="(690,50)" to="(690,160)"/>
+    <wire from="(140,330)" to="(360,330)"/>
+    <wire from="(330,480)" to="(360,480)"/>
+    <wire from="(340,180)" to="(360,180)"/>
+    <wire from="(340,320)" to="(360,320)"/>
+    <wire from="(340,460)" to="(360,460)"/>
+    <wire from="(390,330)" to="(410,330)"/>
+    <wire from="(340,320)" to="(340,430)"/>
+    <wire from="(140,50)" to="(670,50)"/>
+    <wire from="(340,210)" to="(340,250)"/>
+    <wire from="(630,90)" to="(630,320)"/>
+    <wire from="(350,440)" to="(360,440)"/>
+    <wire from="(280,470)" to="(360,470)"/>
+    <wire from="(70,40)" to="(70,220)"/>
+    <wire from="(330,480)" to="(330,530)"/>
+    <wire from="(610,70)" to="(610,310)"/>
+    <wire from="(160,170)" to="(360,170)"/>
+    <wire from="(160,310)" to="(360,310)"/>
+    <comp lib="5" loc="(450,250)" name="LED">
+      <a name="color" val="#43f000"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Sum"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="5" loc="(450,530)" name="LED">
+      <a name="color" val="#43f000"/>
+      <a name="offcolor" val="#ffffff"/>
+      <a name="label" val="Carry"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(120,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Cin"/>
+    </comp>
+    <comp lib="7" loc="(390,430)" name="7432"/>
+    <comp lib="0" loc="(70,520)" name="Ground"/>
+    <comp lib="7" loc="(390,300)" name="7408"/>
+    <comp lib="0" loc="(120,50)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="a"/>
+    </comp>
+    <comp lib="7" loc="(390,160)" name="7486"/>
+    <comp lib="0" loc="(120,70)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="b"/>
+    </comp>
+    <comp lib="6" loc="(75,544)" name="Text">
+      <a name="text" val="GND"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="0" loc="(690,50)" name="Power"/>
+    <comp lib="6" loc="(789,204)" name="Text">
+      <a name="text" val="PART 2"/>
+      <a name="halign" val="left"/>
+    </comp>
+    <comp lib="6" loc="(693,27)" name="Text">
+      <a name="text" val="5V"/>
+      <a name="halign" val="left"/>
+    </comp>
+  </circuit>
+</project>
